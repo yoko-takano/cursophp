@@ -17,7 +17,7 @@
             <label for="dividen">Dividendo</label>
             <input type="number" name="dividen" id="idividen" value="<?=$dividen?>">
             <label for="divisor">Divisor</label>
-            <input type="number" name="divisor" id="idivisor" value="<?=$divisor?>">
+            <input type="number" name="divisor" id="idivisor" value="<?=$divisor?>" min="1">
             <input type="submit" value="Analisar">
         </form>
     </main>
@@ -26,15 +26,17 @@
         <?php 
             $resto = $dividen % $divisor;
             $quociente = intdiv($dividen, $divisor);
-            echo "
-            <ul>
-                <li> Dividendo = $dividen </li>
-                <li> Divisor = $divisor </li>
-                <li> Quociente = $quociente </li>
-                <li> Resto = $resto </li>
-            </ul>
-            ";
         ?>
+        <table class="divisao">
+            <tr>
+                <td><?=$dividen?></td>
+                <td><?=$divisor?></td>
+            </tr>
+            <tr>
+                <td><?=$resto?></td>
+                <td><?=$quociente?></td>
+            </tr>
+        </table>
     </section>
 </body>
 </html>
