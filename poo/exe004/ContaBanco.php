@@ -42,8 +42,9 @@
         public function sacar($saida) {
             if ($this->getSaldo() >= $saida && $this->getStatus() == "ativo") {
                 $this->setSaldo($this->getSaldo()-$saida);
-            } else 
+            } else {
                 echo "Você não tem saldo suficiente para o saque ou sua conta está desativada.</p>";
+            }
         }
         public function pagarMensal() {
             if ($this->getTipo() == "CC" && $this->getStatus() == "ativo" && $this->getSaldo() >= 12){
