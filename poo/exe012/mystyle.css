@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 /* ELEMENTOS DA INTERFACE */
