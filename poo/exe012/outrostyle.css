@@ -1,7 +1,8 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Itim', cursive;
     box-sizing: border-box;
 }
 
